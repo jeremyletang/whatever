@@ -4,5 +4,5 @@
   publish = "site"
 [build.environment]
   # Change this path with the path to your repository
-  GO_IMPORT_PATH = "github.com/vegaprotocol/topgun-lookup"
+  GO_IMPORT_PATH = "github.com/jeremyletang/whatever"
   GO111MODULE = "on"

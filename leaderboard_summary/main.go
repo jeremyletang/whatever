@@ -106,11 +106,11 @@ func getLeaderboard() (*Leaderboard, error) {
 func handler(ev events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	headers := map[string]string{
 		"Access-Control-Allow-Origin":  "*",
-		"Access-Control-Allow-Methods": "POST",
+		"Access-Control-Allow-Methods": "GET",
 		"Access-Control-Allow-Headers": "*",
 	}
 	multiValHeaders := map[string][]string{
-		"Access-Control-Allow-Methods": []string{"POST"},
+		"Access-Control-Allow-Methods": []string{"GET"},
 		"Access-Control-Allow-Headers": []string{"*"},
 	}
 

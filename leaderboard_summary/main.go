@@ -94,7 +94,7 @@ func getLeaderboard() (*Leaderboard, error) {
 	sort.Slice(lb.Traders, func(i, j int) bool { return lb.Traders[i].Order < lb.Traders[j].Order })
 
 	// then summary
-	var i int
+	var i int = 1
 	for _, v := range lb.Traders {
 		lb.Summary = fmt.Sprintf("%v%v. %v|%v|$%v\n", lb.Summary, i, v.Name, v.PublicKey[len(v.PublicKey)-5:], v.TotalUSD)
 		i++
